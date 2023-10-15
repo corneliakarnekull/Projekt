@@ -287,6 +287,7 @@ nav ul li a:focus {
   flex: 1;
   padding: 20px;
   color: rgb(0, 0, 0);
+  margin-bottom: 10px;
 }
 
 .recipe h2,
@@ -296,14 +297,13 @@ nav ul li a:focus {
 .recipe li {
   margin-left: 20px;
   font-size: 1rem;
-  margin-bottom: 10px;
 }
 
 .recipe h2 {
   font-family: 'Beau Rivage', Courier, monospace;
   color: rgb(15, 14, 14);
   font-size: 5rem;
-  margin-left: 180px;
+  margin-left: 200px;
   margin-bottom: 1px;
   margin-top: 20px;
 }
