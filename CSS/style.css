@@ -159,8 +159,6 @@ main p {
   text-align: center;
   font-size: 0.95rem;
   margin-right: 30px;
-  font-family: 'Beau Rivage', Courier, monospace;
-
 }
 
 .about h3 {
@@ -168,6 +166,7 @@ main p {
   text-align: center;
   padding-right: 30px;
   margin-bottom: 1px;
+  font-family: 'Beau Rivage', Courier, monospace;
   font-size: 3rem;
 }
 
