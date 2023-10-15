@@ -251,7 +251,7 @@ nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  padding: 10px;
+  padding: 0px;
 }
 
 nav li {
