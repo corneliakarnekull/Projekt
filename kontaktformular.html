@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - ANCO Food</title>
+    <link rel="stylesheet" href="../CSS/style.css"> <!--Link the style.css file -->
+</head>
+
+<body> <!--Hemsidans innehåll-->
+    <main>
+        <div class="kontakt">
+            <h2>Kontaktformulär</h2>
+            <p>Har du tips på vad vi ska laga nästa gång? Eller bara kontakta oss angående en fråga? Skriv in i forumläret nedan så 
+                hör vi av oss!
+            </p>
+            <form action="#" method="post">
+                <ul>
+                    <li>
+                        <label for="form-name">Namn</label>
+                        <input type="text" id="form-name" name="form-name" placeholder="Ditt namn">
+                    </li>
+                    <li>
+                        <label for="form-email">Email</label>
+                        <input type="text" id="form-email" name="form-email" placeholder="Din email">
+                    </li>
+                    <li>
+                        <h3>Ämne:</h3>
+                        <ul>
+                            <li><label><input type="radio" name="form-setup" value="quad"> Matips </label></li>
+                            <li><label><input type="radio" name="form-setup" value="single"> Allergi </label></li>
+                            <li><label><input type="radio" name="form-setup" value="tri"> Övrigt </label></li>
+                        </ul>
+                        <input type="text" id="form-message" name="form-message" placeholder="Här kan du skriva:">
+                    </li>
+                    <li>
+                        <input type="submit" name="Skicka" value="Skicka&rarr;">
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <a href="../startsida.html" class="nav-button-home">⌂</a>
+    </main>
+
+
+    <footer> <!-- Hemsidans sidfot -->
+        <p>&copy; Upphovsrätt 2023 | ANCO Food</p>
+        <p>Images from @ancofood</p>
+    </footer>
+
+    <script src="JS/script.js" type="module"></script> <!-- Include the script.js file -->
+</body>
+
+</html>
