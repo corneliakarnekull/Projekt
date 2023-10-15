@@ -159,6 +159,7 @@ main p {
   text-align: center;
   font-size: 0.95rem;
   margin-right: 30px;
+
 }
 
 .about h3 {
@@ -209,7 +210,7 @@ main p {
 .food3 p {
   text-align: center;
   margin-top: 270px;
-  margin-left: 510px;
+  margin-left: 400px;
   position: absolute;
   font-size: 1.6rem;
   color: white;
@@ -250,7 +251,7 @@ nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  padding: 20px;
+  padding: 10px;
 }
 
 nav li {
