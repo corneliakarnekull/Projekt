@@ -138,37 +138,64 @@ main p {
   max-width: 800px;
 }
 
+
 /*Om oss*/
 .about {
+  border-radius: 20px;
   justify-content: center;
-  width: 80%;
-  align-items: center;
-  right: 100px;
+  width: 70%;
+  margin: 0 auto; /* Centers the content */
   background-color: white;
+  display: flex;
+  flex-direction: row; /* Display boxes side by side by default */
+
+  /* Adjustments for smaller screens */
+  @media (max-width: 1200px) {
+    flex-direction: column; /* Stack boxes on smaller screens */
+    align-items: center; /* Center items vertically */
+    width: 40%;
+  }
 }
 
-.about img {
-  width: 50%;
-  height: 100%;
-  float: left;
-  padding-right: 30px;
-}
-
-.about p {
-  color: black;
-  text-align: center;
-  font-size: 0.95rem;
-  margin-right: 30px;
-
+.aboutimage,
+.abouttext {
+  flex: 10; /* Each box takes equal width */
+  padding: 10px;
 }
 
 .about h3 {
   color: rgb(108, 106, 106);
   text-align: center;
-  padding-right: 30px;
-  margin-bottom: 1px;
   font-family: 'Beau Rivage', Courier, monospace;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  @media (max-width: 1300px) {
+    font-size: 2rem;}
+}
+
+.abouttext p {
+  color: black;
+  text-align: center;
+  font-size: medium;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  margin-top: 15px;
+
+  @media (max-width: 1300px) {
+    font-size: medium;}
+}
+
+.aboutimage img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+
+.cen {
+  justify-content: center;
 }
 
 /*Maträtterna*/
@@ -234,7 +261,7 @@ nav {
   position: fixed;
   margin-top: 1200px;
   top: 100px;
-  width: 80%;
+  width: 60%;
   font-size: 1.5rem;
   background-color: #fff4f465;
   top: 0;
@@ -243,7 +270,10 @@ nav {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
 
+  @media (max-width: 1300px) {
+    font-size: 1.5rem;}
 }
+
 
 
 nav ul {
@@ -574,6 +604,11 @@ tr:hover {
   .nav-button-right {
     top: 40%;
   }
+  
+  nav li {
+    font-size: 1.2rem;
+    margin: 0 10px;
+  }
 }
 
 /*För 1100px*/
@@ -582,10 +617,6 @@ tr:hover {
     font-size: 7rem;
   }
 
-  nav li {
-    font-size: 1.2rem;
-    margin: 0 10px;
-  }
 
   .food1 h4,
   .food2 h4,
@@ -633,10 +664,11 @@ tr:hover {
 }
 
 /*För 1000px*/
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .title {
     font-size: 7rem;
   }
+
 
   nav li {
     font-size: 1.0rem;
@@ -669,5 +701,3 @@ tr:hover {
   }
 
 }
-
-
